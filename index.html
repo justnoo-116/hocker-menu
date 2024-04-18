@@ -7,16 +7,19 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        margin: 20px; /* 在小屏幕上减少边距 */
-        background-color: #f2f2f7;
+        margin: 40px;
+        background-image: url('img/VCG211169333324.jpeg');
+        background-size: cover; /* 使背景图片充满整个屏幕 */
+        background-repeat: no-repeat; /* 防止背景图片重复 */
     }
     .container {
-        max-width: 100%; /* 使容器宽度在小屏幕上更灵活 */
+        max-width: 600px;
         margin: auto;
-        padding: 10px; /* 在小屏幕上减少填充 */
-        border-radius: 10px; /* 调整为更适合小屏幕的边框圆角 */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        justify-content: center; /* 水平居中 */
     }
     .question {
         border-bottom: 2px solid #eaeaed;
@@ -59,23 +62,6 @@
     }
     button:hover {
         background-color: #0056b3;
-    }
-    .image-container img,
-    #zicebiao {
-        max-width: 100%; /* 确保图片不会超出容器宽度 */
-        height: auto; /* 保持图片的原始宽高比 */
-        text-align: center;
-    }
-    @media (min-width: 768px) {
-        /* 针对较大屏幕的样式调整 */
-        body {
-            margin: 40px;
-        }
-        .container {
-            max-width: 600px; /* 对于大屏幕，限制最大宽度 */
-            padding: 20px;
-            border-radius: 20px;
-        }
     }
 </style>
 </head>
@@ -129,16 +115,17 @@
             <option value="medium">中度</option>
         </select>
         <div>
-            <img id="zicebiao" src="img/QQ截图20240221162837.jpg" style="height: 500px;max-width: 100%;">
+            <img id="zicebiao" src="img/QQ截图20240221162837.jpg" style="height: auto;width: 400px;">
         </div>
     </div>
     
     <div class="question">
         <p>选择首杀玩法(第一次射出方式)</p>
         <select id="firstKillMethod">
-            <option value="kb">口爆</option>
-            <option value="rb">乳爆</option>
-            <option value="zb">足爆</option>
+            <option value="kb">口交</option>
+            <option value="rb">乳交</option>
+            <option value="zb">足交</option>
+            <option value="zb">腿交</option>
         </select>
     </div>
 
@@ -147,20 +134,25 @@
         <select id="locationChoice">
             <option value="home">上门服务</option>
             <option value="class">教室服务</option>
+            <option value="car">车震服务</option>
+            <option value="outside">户外服务</option>
         </select>
         
     </div>
     <div class="question">
         <p>选择服务套餐</p>
         <select id="servicePackage">
-            <option value="600">600/p/1小时</option>
-            <option value="1000">1000/pp/2小时</option>
-            <option value="1400">1400/不限次数/2小时</option>
-            <option value="2500">2400/包夜</option>
-            
+            <option value="800">600/p/1小时</option>
+            <option value="1200">1000/pp/2小时</option>
+            <option value="1500">1500/无限火力/2小时</option>
+            <option value="2500">2500/包夜</option>
         </select>
     </div>
     <button id="submitChoices">提交</button>
+    <div>
+        <p style="color: red;">选择完成后请将当前页面截图发送给老师哦。</p>
+    </div>
+    
 </div>
 <div class="disclaimer">
     <p style="text-align:center; margin-top:20px; color: #999;">
